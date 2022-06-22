@@ -1,0 +1,39 @@
+.button{
+    &, &:link{
+        width: 25rem;
+        height: 5.5rem;
+        background-color: white;
+        color: black;
+        font-size: 1.75rem;
+        border: .05rem solid black;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+    }
+
+    & > *{
+        transform: translateY(-.5rem);
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        margin-bottom: .80rem;
+        margin-right: .75rem;
+        width: inherit;
+        height: inherit;
+        background-color: inherit;
+        border: inherit;
+        z-index: -1;
+    }
+
+    &_arrow{
+        margin-left: 2rem;
+        height: 55%;
+    }
+}

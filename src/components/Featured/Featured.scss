@@ -1,0 +1,62 @@
+.featured{
+    margin-top: 1rem;
+    background-color: white;
+    border: .05rem solid black;
+    padding: 1.5rem 0 2rem 0;
+
+    &_header{
+        overflow: hidden;
+        padding: 0 1.5rem;
+    }
+
+    &_title{
+        font-size: 4.5rem;
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Space Mono';
+
+        & > *{
+            &:not(:first-child){
+                margin-left: 1.5rem;
+            }
+        }
+
+        &--alt{
+            color: white;
+            -webkit-text-stroke-width: .1rem;
+            -webkit-text-stroke-color: black;
+        }
+    }
+
+    &_content{
+        width: 97.5%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Space Mono';
+
+        & > *{
+            width: 47.5%;
+        }
+
+        &--info{
+            display: flex;
+            flex-direction: column;
+
+            &--title{
+                font-size: 3rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            &--subtitle{
+                font-size: 1.5rem;
+                text-align: justify;
+                line-height: 2;
+                margin: 1rem 0 2rem 0;
+            }
+        }
+    }
+}

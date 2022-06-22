@@ -1,0 +1,79 @@
+.navbar{
+    height: 7.5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: .05rem solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &--centered{
+        justify-content: center;
+    }
+
+    &_section{
+        width: inherit;
+        height: inherit;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+
+        & > *{
+            height: inherit;
+            display: flex;
+            align-items: center;
+            // background-color: pink;
+            
+            &:not(:last-child){
+                border-right: .05rem solid black;
+            }
+        }
+    }
+
+    &_menu{
+        width: 40%;
+        list-style-type: none;
+
+        &--items{
+            display: inline-block;
+
+            & > *{
+                margin-left: 2.5em;
+            }
+
+            a, a:link{
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:focus{
+                    color: black;
+                }
+
+                &:not(:focus){
+                    color: #C1C1C1;
+                }
+
+                &.active{
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &_logo{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        
+        &--img{
+            display: block;
+        }
+    }
+
+    &_search{
+        width: 30%;
+    }
+    
+    
+}

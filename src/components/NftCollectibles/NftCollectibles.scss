@@ -1,0 +1,28 @@
+.nft-collectibles{
+    margin-top: 1rem;
+    background-color: black;
+    height: 45rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    &_intro{
+        font-size: 2rem;
+        color: #818181;
+    }
+
+    &_text{
+        margin-top: 2rem;
+        font-size: 5rem;
+        background-image: linear-gradient(90deg, #7000FF -6.63%, #00FFF0 106.8%);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        font-family: 'Space Mono';
+    }
+}

@@ -1,0 +1,63 @@
+.playlists{
+    margin-top: 1rem;
+    background-color: white;
+    border: .05rem solid black;
+    display: flex;
+    flex-direction: column;
+
+    &_header{
+        border-bottom: .025rem solid black;
+        padding: 1.5rem;
+        overflow: hidden;
+    }
+
+    &_title{
+        font-size: 4.5rem;
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Space Mono';
+
+        & > *{
+            &:not(:first-child){
+                margin-left: 1.5rem;
+            }
+        }
+
+        &--alt{
+            color: white;
+            -webkit-text-stroke-width: .1rem;
+            -webkit-text-stroke-color: black;
+        }
+    }
+
+    &_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > *{
+            width: 25%;
+            border-right: .05rem solid black;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-transform: uppercase;
+            font-family: 'Space Mono';
+
+            &:last-child{
+                border-right: none;
+            }
+        }
+
+        &--title{
+            margin-top: 1.75rem;
+            font-size: 2rem;
+        }
+
+        &--subtitle{
+            font-size: 1.25rem;
+        }
+    }
+}

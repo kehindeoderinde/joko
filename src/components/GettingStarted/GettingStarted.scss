@@ -1,0 +1,23 @@
+.getting-started{
+    height: 55rem;
+    margin-top: 1rem;
+    background-color: white;
+    border: .05rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_text{
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Space Mono';
+        margin-bottom: 3rem;
+
+        &--subtitle{
+            display: block;
+            margin-top: .5rem;
+        }
+    }
+}
